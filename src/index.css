@@ -497,6 +497,8 @@ button { color: inherit; font: inherit; }
 /* Publication media beneath the existing editorial content. */
 .publication-media { position: relative; z-index: 1; width: var(--shell); margin: clamp(45px, 6vw, 80px) auto 0; overflow: hidden; box-shadow: 0 30px 100px rgba(201,162,39,.12); }
 .publication-media video { display: block; width: 100%; height: clamp(360px, 60vh, 720px); object-fit: cover; }
+.publication-sound-toggle { position: absolute; right: 20px; bottom: 20px; z-index: 20; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid rgba(201,162,39,.7); border-radius: 50%; background: rgba(5,5,5,.72); color: #fff; backdrop-filter: blur(10px); cursor: pointer; touch-action: manipulation; pointer-events: auto; transition: transform .25s ease, background .25s ease; }
+.publication-sound-toggle:hover { transform: scale(1.06); background: rgba(5,5,5,.9); }
 
 @media (max-width: 700px) {
   .publication-media { width: calc(100% - 48px); margin-top: 45px; }
